@@ -1,0 +1,12 @@
+# Build scripts (not part of the deployed site)
+*.py
+
+# System files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
