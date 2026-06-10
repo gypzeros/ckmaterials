@@ -497,11 +497,14 @@ em { font-style: italic; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
-  background: var(--c-line);
-  border: 1px solid var(--c-line);
+  background: rgba(245, 239, 228, 0.08);
+  border: 1px solid rgba(245, 239, 228, 0.08);
+  border-radius: var(--r);
+  overflow: hidden;
 }
 .brand-card {
-  background: var(--c-paper);
+  background: var(--c-ink);
+  color: var(--c-cream);
   padding: 44px 32px 36px;
   display: flex;
   flex-direction: column;
@@ -510,36 +513,33 @@ em { font-style: italic; }
   position: relative;
 }
 .brand-card:hover {
-  background: var(--c-white);
+  background: var(--c-charcoal);
   transform: translateY(-2px);
 }
-.brand-card--featured {
-  background: var(--c-ink);
-  color: var(--c-cream);
+/* The featured modifier subtly distinguishes Prissmacer with a thin gold accent */
+.brand-card--featured::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--c-gold), transparent);
 }
-.brand-card--featured .brand-card__desc { color: rgba(245, 239, 228, 0.75); }
-.brand-card--featured .brand-card__link { color: var(--c-gold); }
-.brand-card--featured:hover { background: var(--c-charcoal); }
 
 .brand-card__mark {
   font-family: var(--f-display);
   font-size: clamp(1.4rem, 2vw, 2rem);
   letter-spacing: 0.01em;
-  color: inherit;
+  color: var(--c-gold);
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid var(--c-line-strong);
+  border-bottom: 1px solid rgba(245, 239, 228, 0.18);
   line-height: 1;
-}
-.brand-card--featured .brand-card__mark {
-  border-bottom-color: rgba(245, 239, 228, 0.18);
-  color: var(--c-gold);
 }
 .brand-card__mark span { display: inline-block; }
 .brand-card__desc {
   font-size: 14px;
   line-height: 1.65;
-  color: rgba(26, 20, 16, 0.65);
+  color: rgba(245, 239, 228, 0.75);
   flex: 1;
 }
 .brand-card__link {
@@ -548,9 +548,9 @@ em { font-style: italic; }
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-weight: 500;
-  color: var(--c-bronze);
+  color: var(--c-gold);
 }
-.brand-card__link:hover { color: var(--c-gold); }
+.brand-card__link:hover { color: var(--c-gold-soft); }
 
 /* ===========================================================
    Collections
