@@ -424,54 +424,110 @@
     </div>
   </section>
 
-  <!-- ===== LAMPS ===== -->
-  <section class="lamps" id="lamps">
-    <div class="container lamps__inner">
-      <div class="lamps__copy reveal">
+  <!-- ===== ACCESSORIES ===== -->
+  <section class="accessories" id="lamps">
+    <div class="container">
+      <div class="section-head reveal">
         <span class="eyebrow">Otros productos</span>
-        <h2 class="h2">Lámparas <em>a medida</em>,<br />diseñadas para tu espacio.</h2>
-        <p>
-          Diseñamos lámparas a medida para interiores y exteriores, adaptadas a tu estilo y necesidades.
-          Cada pieza nace de un diálogo con el cliente: materiales, escala, luz y carácter.
+        <h2 class="h2">Accesorios <em>y complementos</em><br />para tu proyecto.</h2>
+        <p class="section-head__lede">
+          Más allá del porcelánico, ofrecemos soluciones complementarias que aportan valor a cada obra:
+          iluminación a medida, sistemas técnicos de instalación profesional y materiales de construcción
+          de referencia internacional.
         </p>
-        <p>
-          Solicita tu presupuesto sin compromiso por WhatsApp o correo electrónico.
-        </p>
-        <div class="lamps__actions">
-          <a href="https://wa.me/34613709637" class="btn btn--primary" target="_blank" rel="noopener">WhatsApp</a>
-          <a href="mailto:contacto@ckmaterials.com" class="btn btn--ghost-dark">Escríbenos</a>
-        </div>
       </div>
-      <div class="lamps__visual reveal">
-        <svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg" class="lamp-svg" aria-hidden="true">
-          <!-- floor base -->
-          <ellipse cx="200" cy="500" rx="80" ry="8" fill="#1a1410" opacity="0.4"/>
-          <rect x="160" y="492" width="80" height="8" rx="2" fill="#1a1410"/>
-          <!-- stand pole curved -->
-          <path d="M 200 492 Q 200 280 200 200 Q 200 120 140 120" stroke="#1a1410" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <!-- hanging shade (woven dome) -->
-          <g transform="translate(140, 120)">
-            <path d="M 0 0 L -45 50 Q -50 90 -38 130 Q -20 165 0 175 Q 20 165 38 130 Q 50 90 45 50 Z" fill="url(#shadeGradient)" stroke="#8B6F47" stroke-width="0.5"/>
-            <!-- horizontal weave lines -->
-            <path d="M -45 55 Q 0 65 45 55" stroke="#7A5F3A" stroke-width="0.6" fill="none" opacity="0.6"/>
-            <path d="M -47 70 Q 0 80 47 70" stroke="#7A5F3A" stroke-width="0.6" fill="none" opacity="0.6"/>
-            <path d="M -48 85 Q 0 95 48 85" stroke="#7A5F3A" stroke-width="0.6" fill="none" opacity="0.6"/>
-            <path d="M -49 100 Q 0 110 49 100" stroke="#7A5F3A" stroke-width="0.6" fill="none" opacity="0.6"/>
-            <path d="M -48 115 Q 0 125 48 115" stroke="#7A5F3A" stroke-width="0.6" fill="none" opacity="0.6"/>
-            <path d="M -45 130 Q 0 140 45 130" stroke="#7A5F3A" stroke-width="0.6" fill="none" opacity="0.6"/>
-            <path d="M -40 145 Q 0 153 40 145" stroke="#7A5F3A" stroke-width="0.6" fill="none" opacity="0.6"/>
-            <path d="M -30 160 Q 0 168 30 160" stroke="#7A5F3A" stroke-width="0.6" fill="none" opacity="0.6"/>
-            <!-- glow at bottom -->
-            <ellipse cx="0" cy="175" rx="35" ry="6" fill="#F5D78A" opacity="0.4"/>
-          </g>
-          <defs>
-            <linearGradient id="shadeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#B8946A"/>
-              <stop offset="50%" stop-color="#D4B286"/>
-              <stop offset="100%" stop-color="#E8C99A"/>
-            </linearGradient>
-          </defs>
-        </svg>
+
+      <div class="accessories-grid">
+        <!-- Lámparas -->
+        <article class="accessory-card reveal">
+          <div class="accessory-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+              <!-- Curved arc pole -->
+              <path d="M 60 138 L 60 70 Q 60 30 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <!-- Base -->
+              <ellipse cx="60" cy="138" rx="18" ry="2.5" fill="currentColor" opacity="0.5"/>
+              <!-- Hanging woven shade -->
+              <g transform="translate(30, 30)">
+                <path d="M 0 0 L -14 18 Q -16 34 -12 48 Q -6 60 0 63 Q 6 60 12 48 Q 16 34 14 18 Z" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M -13 22 Q 0 26 13 22" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.6"/>
+                <path d="M -14 30 Q 0 34 14 30" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.6"/>
+                <path d="M -14 38 Q 0 42 14 38" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.6"/>
+                <path d="M -13 46 Q 0 50 13 46" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.6"/>
+                <path d="M -10 54 Q 0 58 10 54" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.6"/>
+              </g>
+            </svg>
+          </div>
+          <span class="accessory-card__tag">Diseño a medida</span>
+          <h3 class="h3">Lámparas a medida</h3>
+          <p>
+            Diseñamos lámparas a medida para interiores y exteriores, adaptadas a tu estilo y necesidades.
+            Cada pieza nace de un diálogo con el cliente: materiales, escala, luz y carácter.
+          </p>
+          <p>Solicita tu presupuesto sin compromiso.</p>
+          <div class="accessory-card__actions">
+            <a href="https://wa.me/34613709637" target="_blank" rel="noopener" class="btn btn--primary btn--sm">WhatsApp</a>
+            <a href="mailto:contacto@ckmaterials.com" class="btn btn--ghost-dark btn--sm">Escríbenos</a>
+          </div>
+        </article>
+
+        <!-- Doga System -->
+        <article class="accessory-card reveal">
+          <div class="accessory-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+              <!-- Leveling cross/T-shape -->
+              <rect x="24" y="46" width="72" height="10" rx="1"/>
+              <path d="M 32 56 L 32 78 M 60 56 L 60 82 M 88 56 L 88 78"/>
+              <!-- Wedges -->
+              <path d="M 26 82 L 42 82 L 32 92 Z" fill="currentColor" opacity="0.35"/>
+              <path d="M 78 82 L 94 82 L 88 92 Z" fill="currentColor" opacity="0.35"/>
+              <!-- Tile line -->
+              <path d="M 18 34 L 102 34" stroke-width="1.5" opacity="0.5"/>
+              <path d="M 60 34 L 60 46" stroke-width="1.5" opacity="0.5"/>
+            </svg>
+          </div>
+          <span class="accessory-card__tag">Sistemas de instalación</span>
+          <h3 class="h3">Doga System</h3>
+          <p>
+            Empresa especializada en soluciones técnicas para la instalación profesional de pavimentos y
+            revestimientos cerámicos. Su catálogo incluye <strong>sistemas de nivelación, crucetas, cuñas,
+            perfiles de remate, juntas de dilatación</strong> y accesorios de colocación diseñados para
+            garantizar precisión y acabados impecables.
+          </p>
+          <p>
+            Reconocida por su innovación y fiabilidad, aporta herramientas que optimizan el trabajo de
+            instaladores y profesionales.
+          </p>
+          <a href="#contact" class="link-arrow">Consultar catálogo →</a>
+        </article>
+
+        <!-- Fassa Bortolo -->
+        <article class="accessory-card reveal">
+          <div class="accessory-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+              <!-- Building silhouette -->
+              <path d="M 24 96 L 24 46 L 60 26 L 96 46 L 96 96 Z"/>
+              <!-- Windows / stone pattern -->
+              <path d="M 24 62 L 96 62" stroke-width="1.4" opacity="0.55"/>
+              <path d="M 24 78 L 96 78" stroke-width="1.4" opacity="0.55"/>
+              <path d="M 42 62 L 42 96 M 60 62 L 60 96 M 78 62 L 78 96" stroke-width="1.4" opacity="0.55"/>
+              <!-- Base line -->
+              <path d="M 18 96 L 102 96" stroke-width="2.4"/>
+            </svg>
+          </div>
+          <span class="accessory-card__tag">Materiales de construcción</span>
+          <h3 class="h3">Fassa Bortolo</h3>
+          <p>
+            Con <strong>más de tres siglos de trayectoria</strong>, Fassa Bortolo representa la excelencia
+            italiana aplicada a la construcción. Amplia gama de soluciones para obra nueva y rehabilitación:
+            morteros técnicos, revestimientos decorativos, sistemas de aislamiento térmico, pinturas,
+            acabados para fachadas y productos de restauración.
+          </p>
+          <p>
+            Referencia para arquitectos, constructores y promotores que buscan alto rendimiento, durabilidad
+            y acabados de máxima calidad.
+          </p>
+          <a href="#contact" class="link-arrow">Consultar catálogo →</a>
+        </article>
       </div>
     </div>
   </section>
