@@ -136,10 +136,10 @@
     /* --- BACK --- */
     .card--back {
       background: linear-gradient(135deg, var(--brown) 0%, var(--brown-deep) 100%);
-      padding: 5mm;
+      padding: 6mm 6mm 6mm 7mm;
       display: flex;
       align-items: center;
-      gap: 4.5mm;
+      gap: 6mm;
     }
     .card__info {
       flex: 1;
@@ -150,47 +150,51 @@
     }
     .card__name {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 5.2mm;
+      font-size: 4.8mm;
       font-weight: 500;
-      line-height: 1.05;
+      line-height: 1.08;
       color: var(--cream);
-      margin-bottom: 1mm;
+      margin-bottom: 1.4mm;
+      letter-spacing: 0.005em;
     }
     .card__role {
-      font-size: 2.3mm;
-      letter-spacing: 0.18em;
+      font-size: 2.1mm;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--gold);
       font-weight: 500;
-      margin-bottom: 3.5mm;
       line-height: 1.3;
+      padding-bottom: 2.8mm;
+      margin-bottom: 3mm;
+      border-bottom: 0.2mm solid rgba(201, 169, 97, 0.35);
     }
     .card__contact {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 1.6mm;
+      gap: 2mm;
     }
     .card__contact li {
-      font-size: 2.5mm;
+      font-size: 2.4mm;
       color: rgba(245, 239, 228, 0.92);
       display: flex;
       align-items: center;
-      gap: 1.8mm;
+      gap: 2mm;
       font-weight: 300;
       letter-spacing: 0.005em;
+      line-height: 1;
     }
     .card__icon {
-      width: 3mm;
-      height: 3mm;
+      width: 2.8mm;
+      height: 2.8mm;
       flex-shrink: 0;
       color: var(--gold);
     }
 
-    /* QR: fixed square so it always fits */
+    /* QR: fixed square, comfortably sized */
     .card__qr {
-      width: 42mm;
-      height: 42mm;
+      width: 33mm;
+      height: 33mm;
       background: var(--cream-soft);
       border-radius: 1.5mm;
       padding: 1.5mm;
